@@ -44,6 +44,24 @@ header a {
     align-items: center;
 }
 
+.home-card {
+    display: flex;
+}
+
+.card-text, .card-img {
+    width: 50%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-text button {
+    align-self: flex-start;
+}
+
 .home .hero-main-text {
     font-size: 48px;
     color: #F9FAF8;
