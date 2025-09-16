@@ -1,10 +1,6 @@
 body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     box-sizing: border-box;
     font-family: 'Roboto', Helvetica, sans-serif 
 }
@@ -45,17 +41,28 @@ header a {
 }
 
 .home-card {
+    padding: 0 1em;
+    max-width: 70%;
     display: flex;
-}
-
-.card-text, .card-img {
-    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
 }
 
 .card-text {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    flex: 1;
     gap: 1em;
+}
+
+.card-img img {
+    width: 100%;
+    max-width: 442px;
+    object-fit: cover;
+    vertical-align: middle;
 }
 
 .card-text button {
@@ -75,11 +82,13 @@ header a {
     margin: 0;
 }
 
+/* About Us */
+
 /* Universal Styles */
 
 section {
     display: flex;
-    flex: 1;
+    height: 100vh;
 }
 
 button {
