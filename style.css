@@ -59,24 +59,21 @@ header a {
 }
 
 .card-img img {
-    width: 100%;
     max-width: 442px;
-    object-fit: cover;
-    vertical-align: middle;
 }
 
 .card-text button {
     align-self: flex-start;
 }
 
-.home .hero-main-text {
+.home h1 {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
     margin: 0;
 }
 
-.home .hero-secondary-text {
+.home p {
     font-size: 18px;
     color: #E5E7EB;
     margin: 0;
@@ -84,11 +81,44 @@ header a {
 
 /* About Us */
 
+.about-us {
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9FAF8;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin: 0;
+    position: relative;
+    top: 20%;
+}
+
+.services {
+    display: flex;
+    gap: 4rem;
+    flex: 1;
+    align-items: center;
+}
+
+.service {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.services img {
+    border-radius: 5%;
+    border: 2px solid blue;
+}
+
 /* Universal Styles */
 
 section {
     display: flex;
-    height: 100vh;
+    height: 93vh;
 }
 
 button {
@@ -102,4 +132,11 @@ button {
 button:hover {
     background-color: #1b5bc4;
     cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
 }
