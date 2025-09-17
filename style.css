@@ -40,7 +40,7 @@ header a {
     align-items: center;
 }
 
-.home-card {
+.home-wrapper {
     padding: 0 1em;
     max-width: 70%;
     display: flex;
@@ -50,7 +50,7 @@ header a {
     gap: 3rem;
 }
 
-.card-text {
+.home-intro {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -58,11 +58,11 @@ header a {
     gap: 1em;
 }
 
-.card-img img {
+.home-img img {
     max-width: 442px;
 }
 
-.card-text button {
+.home-intro button {
     align-self: flex-start;
 }
 
@@ -82,19 +82,23 @@ header a {
 /* About Us */
 
 .about-us {
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #F9FAF8;
     text-align: center;
+}
+
+.au-wrapper {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .about-us h1 {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
-    margin: 0;
-    position: relative;
-    top: 20%;
 }
 
 .services {
